@@ -64,7 +64,11 @@ Follow these steps to get started with your NestJS microservices project:
     ```bash
     npx prisma migrate dev
     ```
+6. **Run Nast server:**
 
+    ```bash
+    docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
+    ```
 ## Contributing
 
 If you wish to contribute to this project, please follow the standard Git workflow:
